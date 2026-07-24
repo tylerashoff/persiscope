@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use persiscope, please cite the dissertation below."
+title: "persiscope"
+type: software
+authors:
+  - family-names: Ashoff
+    given-names: Tyler
+repository-code: "https://github.com/tylerashoff/persiscope"
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "Persistent Convolution: A Topological Approach to Formal AI Alignment Testing"
+  authors:
+    - family-names: Ashoff
+      given-names: Tyler
+  year: 2026
+  institution:
+    name: "University of Virginia"
+  thesis-type: "PhD dissertation"
+  doi: "10.18130/8k9j-9k42"

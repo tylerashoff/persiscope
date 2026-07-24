@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persiscope"
+version = "0.1.0b3"
+description = "Topological representations and pairwise comparison of embeddings — persistence + periscope."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Tyler Ashoff" }]
+keywords = [
+    "topological data analysis",
+    "tda",
+    "persistent homology",
+    "persistence landscapes",
+    "embeddings",
+    "representation similarity",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "networkx>=2.8",
+    "gudhi>=3.7",
+    "tqdm>=4.0",
+]
+
+[project.optional-dependencies]
+metrics = ["dtaidistance>=2.3", "similaritymeasures>=1.0"]
+viz = ["matplotlib>=3.5", "plotly>=5.0", "nbformat>=4.2"]
+frame = ["pandas>=1.5"]
+all = [
+    "dtaidistance>=2.3",
+    "similaritymeasures>=1.0",
+    "matplotlib>=3.5",
+    "plotly>=5.0",
+    "nbformat>=4.2",
+    "pandas>=1.5",
+]
+reproduce = [
+    "dtaidistance>=2.3",
+    "similaritymeasures>=1.0",
+    "matplotlib>=3.5",
+    "plotly>=5.0",
+    "nbformat>=4.2",
+    "pandas>=1.5",
+    "notebook>=7.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.16,<0.17",
+    "build>=1.0",
+    "pandas>=1.5",
+    "dtaidistance>=2.3",
+    "similaritymeasures>=1.0",
+    "matplotlib>=3.5",
+    "plotly>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/tylerashoff/persiscope"
+Repository = "https://github.com/tylerashoff/persiscope"
+Dissertation = "https://doi.org/10.18130/8k9j-9k42"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "metrics: requires the optional [metrics] extra (dtaidistance, similaritymeasures)",
+    "viz: requires the optional [viz] extra (matplotlib, plotly)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "C4", "RUF"]
