@@ -6,6 +6,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0b3] - 2026-07-24
+
+First public release (beta), published to PyPI.
+
 ### Added
 - Initial extraction of the topological-representation and scoring stages from
   the `pleats` research pipeline into a standalone, in-memory, sklearn-style
