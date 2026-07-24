@@ -5,9 +5,9 @@ persistence + periscope.
 
 persiscope turns embedded data into persistence-based summaries (persistence
 landscapes and silhouettes) and scores how topologically similar two embedding
-sets are. It was extracted from the `pleats` research pipeline into a
-standalone library. Everything runs in memory through a sklearn-style API;
-there are no config files, and nothing touches disk unless you ask.
+sets are. It implements the methodology developed in Ashoff (2026); see the
+Reference section below. Everything runs in memory through a sklearn-style
+API, with no configuration files and no hidden disk writes.
 
 ## Install
 
@@ -157,7 +157,7 @@ pytest
 ```
 
 During extraction, persiscope's landscapes and silhouettes were verified to
-match the original `pleats` implementation to numerical tolerance.
+match the dissertation's original implementation to numerical tolerance.
 
 ## Reference
 

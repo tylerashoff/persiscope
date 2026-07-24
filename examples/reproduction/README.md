@@ -19,7 +19,7 @@ jupyter notebook examples/reproduction/
 
 Notes:
 
-- The original figures were produced by the `pleats` research pipeline.
+- The original figures were produced by the dissertation's research pipeline.
   persiscope matches it to numerical tolerance on the summary functions, but
   bootstrap draws use different random sequences, so reproduced figures are
   statistically identical rather than pixel-identical.

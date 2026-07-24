@@ -6,7 +6,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [0.1.0b4] - 2026-07-24
+## [0.1.0b5] - 2026-07-24
 
 ### Changed
 - Default `silhouette_power` is now 0.5 (was 3), matching the configuration used
@@ -21,9 +21,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 First public release (beta), published to PyPI.
 
 ### Added
-- Initial extraction of the topological-representation and scoring stages from
-  the `pleats` research pipeline into a standalone, in-memory, sklearn-style
-  library.
+- Initial release of the topological-representation and scoring methodology
+  from Ashoff (2026) as a standalone, in-memory, sklearn-style library.
 - `compare()`: takes a list of embedding arrays, returns an all-pairs
   `ComparisonResult` (score matrix plus optional p-values).
 - `TopologicalTransformer` (`fit_transform`) producing a `Representation` with
