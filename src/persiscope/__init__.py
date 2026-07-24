@@ -1,4 +1,4 @@
-"""persiscope — topological representations and pairwise comparison of embeddings.
+"""persiscope: topological representations and pairwise comparison of embeddings.
 
 *persistence + periscope.* Turn embedded data into persistence-based summaries
 (landscapes and silhouettes) and score how topologically similar two embedding
@@ -35,7 +35,7 @@ from .scoring import (
 )
 from .summaries import Summaries, compute_summaries
 
-__version__ = "0.1.0b3"
+__version__ = "0.1.0b4"
 
 __all__ = [
     "CURVE_METRICS",

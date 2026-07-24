@@ -66,7 +66,7 @@ tf = ps.TopologicalTransformer(
     homology_dim=0,
     diagram_transform=ps.RotateScale(theta=-3 * np.pi / 8, alpha=np.sqrt(2) / 2),
     n_bootstrap=100,
-    silhouette_power=3,
+    silhouette_power=0.5,
     tenting_resolution=1000,
     random_state=0,
 )

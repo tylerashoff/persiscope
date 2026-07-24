@@ -41,7 +41,7 @@ def bootstrap_summaries(
     n_bootstrap: int = 100,
     subsample: float = 0.8,
     resolution: int = 1000,
-    silhouette_power: float = 3.0,
+    silhouette_power: float = 0.5,
     landscape_order: int = 0,
     band_alpha: float = 0.05,
     rng: np.random.Generator | None = None,

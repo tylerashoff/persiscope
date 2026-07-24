@@ -6,6 +6,16 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0b4] - 2026-07-24
+
+### Changed
+- Default `silhouette_power` is now 0.5 (was 3), matching the configuration used
+  for the published results.
+
+### Fixed
+- The ring example reproduction notebook now matches the original run exactly:
+  ring geometry, sampler seeding, and analysis parameters.
+
 ## [0.1.0b3] - 2026-07-24
 
 First public release (beta), published to PyPI.

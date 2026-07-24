@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "persiscope"
-version = "0.1.0b3"
-description = "Topological representations and pairwise comparison of embeddings — persistence + periscope."
+version = "0.1.0b4"
+description = "Topological representations and pairwise comparison of embeddings (persistence + periscope)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

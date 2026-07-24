@@ -32,7 +32,7 @@ def compare(
     diagram_transform: DiagramTransform | None = None,
     n_bootstrap: int = 100,
     subsample: float = 0.8,
-    silhouette_power: float = 3.0,
+    silhouette_power: float = 0.5,
     landscape_order: int = 0,
     tenting_resolution: int = 1000,
     weight_method: str = "euclidean",

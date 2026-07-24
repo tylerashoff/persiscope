@@ -63,7 +63,7 @@ def compute_silhouette(
     tenting_values: np.ndarray,
     t_values: np.ndarray,
     diagram: np.ndarray,
-    power: float = 3.0,
+    power: float = 0.5,
 ) -> np.ndarray:
     """Persistence-weighted silhouette (weights ``|death - birth|**power``)."""
     if len(tenting_values) == 0:
@@ -115,7 +115,7 @@ def compute_summaries(
     transform: DiagramTransform | None = None,
     homology_dim: int = 0,
     resolution: int = 1000,
-    silhouette_power: float = 3.0,
+    silhouette_power: float = 0.5,
     landscape_order: int = 0,
 ) -> Summaries:
     """Transform ``finite_diagram`` and build its landscape and silhouette."""
